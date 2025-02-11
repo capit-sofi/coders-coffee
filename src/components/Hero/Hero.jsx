@@ -94,8 +94,9 @@ const Hero = () => {
             </motion.div>
            </div>
 
-           <motion.div
-             initial={{opacity: 0, y: -100}}
+          <div className='hidden lg:block'>
+          <motion.div
+             initial={{opacity: 0, y: 100}}
              animate={{opacity: 1, y: 0}}
              transition={{
                type:'spring',
@@ -117,6 +118,7 @@ const Hero = () => {
            </motion.div>
            <div></div>
           </div>
+          </div>
         </div>
 
        { sidebar && (
@@ -129,7 +131,7 @@ const Hero = () => {
                 damping: 10,
                 delay: 0.2,
               }}
-          className='absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primery/80 to-primaryDark/80 backdrop-blur-sm z-10'>
+          className='absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primery/80 to-primaryDark/80 backdrop-blur-sm z-50'>
          <div className='w-full h-full flex justify-center items-center'>
          <div className=' flex flex-col justify-center items-center gap-6 text-white'>
             <div className='w-[1px] h-[70px] bg-white'>

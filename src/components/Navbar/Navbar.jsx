@@ -3,7 +3,7 @@ import { IoMenuSharp } from "react-icons/io5";
 import {motion} from 'framer-motion'
 const Navbar = ({sidebar, setSidebar}) => {
   return (
-    <nav className='absolute top-0 left-0 w-full pt-10 text-white z-20'>
+    <nav className='absolute top-0 left-0 w-full pt-10 text-white z-[9999]'>
         <motion.div 
           initial={{opacity: 0, y: -100}}
           animate={{opacity: 1, y: 0}}
